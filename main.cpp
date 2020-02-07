@@ -31,10 +31,17 @@ void arm() //function to arm the igniter, mark the time the igniter was armed fo
     time_armed = millis();
     armed = true;
   }
+  
+void relayOFF() //turn the relay off
+  {
+    digitalWrite(RELAY,LOW);
+    digitalWrite(PROCESSING,LOW);
+  }
 
 void disarm() //turn armed to false
   {
     armed = false;
+    relayOFF();
   }
 
 void relayON() //check if armed is set to true and ignite motor if so, else reply to user saying did not digitally arm
@@ -45,12 +52,6 @@ void relayON() //check if armed is set to true and ignite motor if so, else repl
     } else {
       xbee_transmit("Igniter not digitally armed");
    }
-  }
-
-void relayOFF() //turn the relay off
-  {
-    digitalWrite(RELAY,LOW);
-    digitalWrite(PROCESSING,LOW);
   }
 
 
@@ -107,8 +108,6 @@ void loop()
       } else if (cmd=="disarm") {
         disarm();
       }
-      
-//   digitalWrite(16,LOW);
    process = false; // turn off the process since we ran the code
   }
 
