@@ -10,7 +10,7 @@ For the igniter, plug in all cables, connectors (maybe with the exception of the
 
 There are five frames (packets) which can be sent to the igniter module:
 1. "arm" - arms the igniter for 60 seconds and returns to a disarmed configuration after 60 seconds.
-2. "disarm" - Disarms the igniter module immediately. Also commands "relay_off" if sent to the igniter module
+2. "disarm" - Disarms the igniter module immediately. Also commands "relay_off" if sent to the igniter module.
 3. "relay_on" - Turns on the igniter relay only if the arm command has been sent to the igniter less than 60 seconds prior. If a "relay_on" has been sent when the igniter is disarmed, the igniter will send a message back to the user indicating it was not digitally armed.
 4. "relay_off" - Turns off the igniter relay.
 5. "ping" - Requests the igniter module to return a message to the user, "ping received" - for confirming radio communication is active and functioning norminally.
