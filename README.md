@@ -4,7 +4,7 @@ Wireless ignition code and frames for OSU Rocketry Teams
 main.cpp is the arduino code driving the igniter.
 frames_list.xml is the list of XCTU frames ready to send to the igniter
 
-To use, open XCTU software and find the radio module. Use the "add new module" as opposed to "discover new module" option and make sure to check the box indicating the radio is programmable. Once the radio has been found, switch to the console working mode (Alt+C) and "Open" the communication. Be sure to load the frames list which are packets to be sent to the igniter module. The radio on the computer(user) end is now active.
+To use, open XCTU software (https://www.digi.com/resources/documentation/digidocs/90001526/tasks/t_download_and_install_xctu.htm) and find the radio module. Use the "add new module" as opposed to "discover new module" option and make sure to check the box indicating the radio is programmable. Once the radio has been found, switch to the console working mode (Alt+C) and "Open" the communication. Be sure to load the frames list which are packets to be sent to the igniter module. The radio on the computer(user) end is now active.
 
 For the igniter, plug in all cables, connectors (maybe with the exception of the igniter leads), and the antennae on the igniter box prior to the batteries. This is to avoid attempting any radio communication without a plugged in antennae, which could damage the radio module. Upon plugging in the batteries, the user with the computer should see a startup message sent from the igniter module, "Waiting for command". The system is now ready to use.
 
