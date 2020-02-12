@@ -18,17 +18,12 @@ def data_receive_callback(xbee_message):
     messages.append(text)
     print(text)
 
+
 device.add_data_received_callback(data_receive_callback)
 #device.send_data_broadcast('ping')
 #device.add_data_received_callback(data_receive_callback)
 
 
-device.send_data_broadcast('ping')
-device.send_data_broadcast('ping')
-device.send_data_broadcast('ping')
-device.send_data_broadcast('ping')
-device.send_data_broadcast('ping')
-device.send_data_broadcast('ping')
 device.send_data_broadcast('ping')
 
 
