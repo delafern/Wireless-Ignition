@@ -12,7 +12,7 @@ boolean process = false; //boolean variable for processing received strings
 boolean armed = false; //boolean variable for adding safety to ignite rocket motor
 
 //xbee stuff and objects
-XBeeAddress64 base_addr64 =  XBeeAddress64(0x0013a200, 0x41574ACD); //address of base Xbee
+XBeeAddress64 base_addr64 =  XBeeAddress64(0x0013a200, 0x41912af0); //address of base Xbee
 XBee xbee = XBee();
 XBeeResponse response = XBeeResponse();
 ZBRxResponse rx = ZBRxResponse();
