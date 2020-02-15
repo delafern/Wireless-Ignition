@@ -6,19 +6,19 @@
   <repeat_period>500</repeat_period>
   <frames_list>
     <frame name="relay_on">
-      <payload>7E001300010013A20041574ACE0072656C61795F6F6EA1</payload>
+      <payload>7E001300010013A20040EBD0540072656C61795F6F6EA1</payload>
     </frame>
     <frame name="relay_off">
-      <payload>7E001400010013A20041574ACE0072656C61795F6F666643</payload>
+      <payload>7E001400010013A20040EBD0540072656C61795F6F666643</payload>
     </frame>
     <frame name="ping">
-      <payload>7E000F00010013A20041574ACE0070696E674C</payload>
+      <payload>7E000F00010013A20040EBD0540070696E674C</payload>
     </frame>
     <frame name="arm">
-      <payload>7E000E00010013A20041574ACE0061726DBA</payload>
+      <payload>7E000E00010013A20040EBD0540061726DBA</payload>
     </frame>
     <frame name="disarm">
-      <payload>7E001100010013A20041574ACE0064697361726D7A</payload>
+      <payload>7E001100010013A20040EBD0540064697361726D7A</payload>
     </frame>
   </frames_list>
 </data>
