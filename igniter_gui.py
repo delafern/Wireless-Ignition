@@ -1,3 +1,4 @@
+##just a quick demo to show how to enable a xbee device, create a callback, and send commands through the command window
 import serial.tools.list_ports
 from digi.xbee.devices import XBeeDevice
 from time import gmtime, strftime
