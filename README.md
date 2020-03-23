@@ -1,8 +1,11 @@
 # Wireless-Ignition
 Wireless ignition code and frames for OSU Rocketry Teams
 
+
+main.py is the python code for the gui , using kivy
 main.cpp is the arduino code driving the igniter.
 frames_list.xml is the list of XCTU frames ready to send to the igniter
+igniter_gui.py is a demo for enabling xbee communication
 
 To use, open XCTU software (https://www.digi.com/resources/documentation/digidocs/90001526/tasks/t_download_and_install_xctu.htm) and find the radio module. Use the "add new module" as opposed to "discover new module" option and make sure to check the box indicating the radio is programmable. Once the radio has been found, switch to the console working mode (Alt+C) and "Open" the communication. Be sure to load the frames list which are packets to be sent to the igniter module. The radio on the computer(user) end is now active.
 
