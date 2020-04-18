@@ -20,7 +20,7 @@ There are five frames (packets) which can be sent to the igniter module:
 
 On the igniter module box, do not forget to toggle the physical arming switch as well. Have a great launch!
 
-Demonstration of the GUI, which can be downloaded at the following box link (so you dont have to compile it)
+Demonstration of the GUI, which can be downloaded at the following box link (so you dont have to compile it) https://oregonstate.box.com/s/kmph8c4jaymfs09kotc6fktzpphtrlqv
 
 GUI
 ![Main](https://github.com/delafern/Wireless-Ignition/blob/master/screencap1.JPG)
