@@ -2,10 +2,10 @@
 Wireless ignition code and frames for OSU Rocketry Teams
 
 
-main.py is the python code for the gui , using kivy
-main.cpp is the arduino code driving the igniter.
-frames_list.xml is the list of XCTU frames ready to send to the igniter
-igniter_gui.py is a demo for enabling xbee communication
+1. main.py is the source python code for the main.exe gui, using kivy.
+2. main.cpp is the arduino code driving the igniter.
+3. frames_list.xml is the list of XCTU frames ready to send to the igniter.
+4. igniter_gui.py is a demo for enabling xbee communication from the command line.
 
 For the igniter, plug in all cables, connectors (maybe with the exception of the igniter leads), and the antennae on the igniter box prior to the batteries. This is to avoid attempting any radio communication without a plugged in antennae, which could damage the radio module. Upon plugging in the batteries, the user with the computer should see a startup message sent from the igniter module, "Waiting for command". The system is now ready to use.
 
@@ -19,7 +19,7 @@ GUI
 Pinging the Igniter Receiver
 ![ping](https://github.com/delafern/Wireless-Ignition/blob/master/screencap2.JPG)
 
-Attempting to Launch when the digital arm command has not been sent
+Attempting to launch when the digital arm command has not been sent
 ![false_attempt](https://github.com/delafern/Wireless-Ignition/blob/master/screencap3.JPG)
 
 Successful sequence
