@@ -20,4 +20,18 @@ There are five frames (packets) which can be sent to the igniter module:
 
 On the igniter module box, do not forget to toggle the physical arming switch as well. Have a great launch!
 
+Demonstration of the GUI, which can be downloaded at the following box link (so you dont have to compile it)
+
+GUI
+![Main](https://github.com/delafern/Wireless-Ignition/blob/master/screencap1.JPG)
+
+Pinging the Igniter Receiver
+![ping](https://github.com/delafern/Wireless-Ignition/blob/master/screencap2.JPG)
+
+Attempting to Launch when the digital arm command has not been sent
+![false_attempt](https://github.com/delafern/Wireless-Ignition/blob/master/screencap3.JPG)
+
+Successful sequence
+![success](https://github.com/delafern/Wireless-Ignition/blob/master/screencap4.JPG)
+
 Fernando A de la Fuente 2/2020
