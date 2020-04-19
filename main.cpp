@@ -1,6 +1,4 @@
 //the receiving end which ignites the motor
-//
-
 #include <Arduino.h>
 #include <XBee.h>
 #define PROCESSING 16 //processing led (for testing)
@@ -30,18 +28,21 @@ void arm() //function to arm the igniter, mark the time the igniter was armed fo
   {
     time_armed = millis();
     armed = true;
+    xbee_transmit("Igniter is armed");
   }
   
 void relayOFF() //turn the relay off
   {
     digitalWrite(RELAY,LOW);
     digitalWrite(PROCESSING,LOW);
+    xbee_transmit("Relay off");
   }
 
 void disarm() //turn armed to false
   {
     armed = false;
     relayOFF();
+    xbee_transmit("Igniter Disarmed");
   }
 
 void relayON() //check if armed is set to true and ignite motor if so, else reply to user saying did not digitally arm
@@ -49,6 +50,7 @@ void relayON() //check if armed is set to true and ignite motor if so, else repl
     if (armed) {
       digitalWrite(RELAY,HIGH);
       digitalWrite(PROCESSING,HIGH);
+      xbee_transmit("Relay on");
     } else {
       xbee_transmit("Igniter not digitally armed");
    }
