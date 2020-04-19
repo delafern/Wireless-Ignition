@@ -14,16 +14,16 @@ On the igniter module box, do not forget to toggle the physical arming switch as
 Demonstration of the GUI, which can be downloaded at the following box link (so you dont have to compile it) https://oregonstate.box.com/s/kmph8c4jaymfs09kotc6fktzpphtrlqv
 
 GUI
-![Main](https://github.com/delafern/Wireless-Ignition/blob/master/screencap1.JPG)
+![Main](https://github.com/fernancode/Wireless-Ignition/blob/master/screencap1.JPG)
 
 Pinging the Igniter Receiver
-![ping](https://github.com/delafern/Wireless-Ignition/blob/master/screencap2.JPG)
+![ping](https://github.com/fernancode/Wireless-Ignition/blob/master/screencap2.JPG)
 
 Attempting to launch when the digital arm command has not been sent
-![false_attempt](https://github.com/delafern/Wireless-Ignition/blob/master/screencap3.JPG)
+![false_attempt](https://github.com/fernancode/Wireless-Ignition/blob/master/screencap3.JPG)
 
 Successful sequence
-![success](https://github.com/delafern/Wireless-Ignition/blob/master/screencap4.JPG)
+![success](https://github.com/fernancode/Wireless-Ignition/blob/master/screencap4.JPG)
 
 To use with XCTU software (https://www.digi.com/resources/documentation/digidocs/90001526/tasks/t_download_and_install_xctu.htm) and find the radio module. Use the "add new module" as opposed to "discover new module" option and make sure to check the box indicating the radio is programmable. Once the radio has been found, switch to the console working mode (Alt+C) and "Open" the communication. Be sure to load the frames list which are packets to be sent to the igniter module. The radio on the computer(user) end is now active.
 
